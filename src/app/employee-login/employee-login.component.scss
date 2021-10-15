@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+
+@import '../../styles.scss';
+
+.container{
+
+    width: 100%;
+    height: 100%;
+    background-image: url(../../assets/jpg_files/login-page-background.jpg);
+    background-repeat: no-repeat;
+    background-size :cover;
+
+    .leftDiv{
+
+        width: 50%;
+
+        .textDiv{
+
+            width: 65%;
+            height: 52%;
+
+            .welcome{
+
+                // font-family: 'Montserrat', sans-serif;
+                font-family: 'PT Sans', sans-serif;
+               //  font-weight: normal;
+                 font-size: 2.3em;
+                // letter-spacing: 1px;
+                 color: #272836;    
+            }
+ 
+            .logo{
+ 
+                 font-family: 'PT Sans', sans-serif;
+                // font-weight: bold;
+                 font-size: 4.3em;
+                 //letter-spacing: 3px;
+                 color: #272836; 
+                 padding-top: 8px;
+            }
+ 
+            .text{
+ 
+                 font-family: 'PT Sans', sans-serif;
+             //    font-weight: 500;
+                 font-size: 1.7em;
+               //  letter-spacing: 1px;
+                 color: #272836; 
+                 line-height: 1.350em;
+                 padding-top: 5px;
+                 text-align: justify;
+            }
+ 
+            .subText{
+ 
+                 font-family: 'PT Sans', sans-serif;
+                 //font-weight: 500;
+                 font-size: 1.5em;
+                 //letter-spacing: 1px;
+                 color: #272836; 
+                 line-height: 1.3em;
+                 text-align: justify;
+            }
+        }   
+    }
+
+    .rightDiv{
+
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size : contain;
+        width: 50%;
+       
+        .loginDiv{
+
+            width: 480px;
+            height: 350px;
+            border-radius: 18px;
+            background-color: white;
+
+            .loginSection{
+
+                width: 85%;
+                height: 86%;
+                margin: 15px 0px 15px 0px;
+
+                .loginText{
+
+                    font-family:  PT Sans;
+                  //  font-weight: normal;
+                    font-size: 2.5em;
+                   // letter-spacing: 1px;
+                    color: #272836;
+                    margin-bottom: 11px;  
+                    line-height: 1em;
+
+                }
+
+                .loginSubText{
+
+                    font-family: 'PT Sans', sans-serif;
+                    //font-weight: normal;
+                    font-size: 1.4em;
+                   // letter-spacing: 1px;
+                    color: #272836;   
+                    line-height: 1.3em; 
+                    margin-bottom: 5px;  
+                    text-align: justify;
+
+                }
+
+                .eyeIcon{
+                    cursor: pointer;
+                }
+
+                .errorMsg {
+
+                    
+                    margin : 1.5em 0em 0.250em 0em;
+                    font-size: 15px;
+                   // font-weight: normal;
+                   // font-stretch: normal;
+                   // font-style: normal;
+                    line-height: 1.38;
+                   // letter-spacing: 0.4px;
+                    color: #ff0000;
+                    margin-bottom: 10px;  
+                }
+
+                .loginButton{
+
+                    font-family: 'PT Sans',sans-serif;
+                    margin-top: 8px;
+                    height: 40px;
+                    font-size: 18px;
+                   // font-weight: 500;
+                   // font-stretch: normal;
+                   // font-style: normal;
+                    line-height: 0.6;
+                   // letter-spacing: 0.4px;
+                    color: #ffffff;
+                    background-color: #196FE0;
+                    
+                }
+                .social{
+                    width: 100%;
+                    padding-inline: 0.2rem;
+
+                    .socsite{
+                        padding-top: 0.2em;
+                    }
+                    .socimg{
+                        padding-bottom: 0.1em;
+                    }
+                }
+                .forgotPassword{
+
+                    font-family: 'PT Sans', sans-serif;
+                  //  font-weight: normal;
+                    font-size: 1.3em;
+                    color: #272836; 
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+
+                .signUp{
+                   
+                    font-family: 'PT Sans', sans-serif;
+                  //  font-weight: normal;
+                    font-size: 1.250em;
+                    color: #272836; 
+                    padding-top: 15px;
+                  //  letter-spacing: 0.50px;
+                    margin-bottom: 15px;  
+                    cursor: pointer;
+                    
+                }
+            }
+        }
+
+        .signupDiv{
+
+            width: 80%;
+            border-radius: 18px;
+            background-color: white;
+
+            .loginSection{
+
+                width: 90%;
+                height: 86%;
+                margin: 15px 0px 15px 0px;
+
+                .loginText{
+
+                    font-family:  PT Sans;
+                  //  font-weight: normal;
+                    font-size: 2.5em;
+                   // letter-spacing: 1px;
+                    color: #272836;
+                    margin-bottom: 11px;  
+                    line-height: 1em;
+
+                }
+
+                .loginSubText{
+
+                    font-family: 'PT Sans', sans-serif;
+                    //font-weight: normal;
+                    font-size: 1.4em;
+                   // letter-spacing: 1px;
+                    color: #272836;   
+                    line-height: 1.3em; 
+                    margin-bottom: 5px;  
+                    text-align: justify;
+
+                }
+
+                .eyeIcon{
+                    cursor: pointer;
+                }
+
+                .errorMsg {
+
+                    
+                     margin : 1.5em 0em 0.250em 0em;
+                    font-size: 15px;
+                   // font-weight: normal;
+                   // font-stretch: normal;
+                   // font-style: normal;
+                    line-height: 1.38;
+                   // letter-spacing: 0.4px;
+                    color: #ff0000;
+                    margin-bottom: 10px;  
+                }
+
+                .loginButton{
+
+                    font-family: 'PT Sans',sans-serif;
+                    margin-top: 8px;
+                    height: 40px;
+                    font-size: 18px;
+                   // font-weight: 500;
+                   // font-stretch: normal;
+                   // font-style: normal;
+                    line-height: 0.6;
+                   // letter-spacing: 0.4px;
+                    color: #ffffff;
+                    background-color: #196FE0;
+                    
+                }
+                .social{
+                    width: 100%;
+                    padding-inline: 0.2rem;
+
+                    .socsite{
+                        padding-top: 0.2em;
+                    }
+                    .socimg{
+                        padding-bottom: 0.1em;
+                    }
+                }
+                .forgotPassword{
+
+                    font-family: 'PT Sans', sans-serif;
+                  //  font-weight: normal;
+                    font-size: 1.3em;
+                    color: #272836; 
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+
+                .signUp{
+                   
+                    font-family: 'PT Sans', sans-serif;
+                  //  font-weight: normal;
+                    font-size: 1.250em;
+                    color: #272836; 
+                    padding-top: 15px;
+                  //  letter-spacing: 0.50px;
+                    margin-bottom: 15px;  
+                    cursor: pointer;
+                    
+                }
+            }
+        }
+    }
+}

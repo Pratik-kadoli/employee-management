@@ -1,0 +1,53 @@
+<div class="container" fxLayoutAlign="start center">
+  <div class="leftDiv" fxFLex="50" fxLayoutAlign="center center">
+    <div class="textDiv" fxLayout="column" fxLayoutGap="40px" fxLayoutAlign="center start">
+      <p class="welcome">Welcome to</p>
+      <p class="logo">Employee<span style="color: rgb(187, 46, 46)">Management</span></p>
+      <p class="text">Making employee details documentation easier</p>
+    </div>
+  </div>
+
+  <div class="rightDiv" fxFLex="50" fxLayout="column" fxLayoutAlign="start center">
+    <div class="loginDiv mat-elevation-z6" fxLayout="column" fxLayoutAlign="center center">
+      <!-- Login section -->
+      <div class="loginSection" fxLayout="column" fxLayoutAlign="start start">
+        <p class="loginText">Login</p>
+        <p class="loginSubText">
+          Login with your username and password to explore the posiblities
+        </p>
+
+        <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)" fxLayout="row wrap" fxLayoutAlign="center start"
+          fxFlex="100" style="width: 100%">
+          <mat-form-field appearance="standard" fxFlex="100">
+            <mat-label>Email</mat-label>
+            <input (input)="clear($event)" matInput required type="email" formControlName="email" />
+            <mat-error *ngIf="form.controls['email'].errors?.required">Email Name is required
+            </mat-error>
+            <mat-error *ngIf="form.controls['email'].errors?.pattern">Email is not valid</mat-error>
+          </mat-form-field>
+
+          <mat-form-field appearance="standard" fxFlex="100">
+            <mat-label>Password</mat-label>
+            <input (input)="clear($event)" matInput required type="password" formControlName="password"
+              [type]="hide ? 'password' : 'text'" />
+            <i class="material-icons eyeIcon" matSuffix (mousedown)="hide = !hide">
+              {{ hide ? "visibility" : "visibility_off" }}
+            </i>
+            <mat-error *ngIf="form.controls['password'].errors?.required">Password field is required
+            </mat-error>
+          </mat-form-field>
+
+          <!-- <div class="errorMsg" fxFlex="100" fxLayout="row" fxLayoutAlign="start center">
+                        <p> {{errorMessage}}</p>
+                    </div> -->
+          <p class="errorMsg">{{ errorMessage }}</p>
+          <div fxFlex="100" fxLayout="row" fxLayoutAlign="space-between end" style="margin-bottom: 15px">
+            <button mat-raised-button type="submit" color="primary" [disabled]="!form.valid" class="loginButton">
+              Sign In
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
