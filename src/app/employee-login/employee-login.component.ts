@@ -27,7 +27,7 @@ export class EmployeeLoginComponent implements OnInit {
   onSubmit( formValue : Object ){
 
    Logs.printLog(formValue , "this is form Data");
-   this.router.navigate(['app/dashboard']);
+   this.router.navigate(['dashboard']);
   }
 
   clear( event ){

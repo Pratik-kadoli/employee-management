@@ -1,41 +1,30 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
 import { Logs } from 'src/app/classes/logs';
 
 @Component({
-  selector: 'app-emp-navbar',
+  selector: 'app-navbar',
   templateUrl: './emp-navbar.component.html',
   styleUrls: ['./emp-navbar.component.scss']
 })
 export class EmpNavbarComponent implements OnInit {
 
-  menuArray : any = [
-    {
-      title: 'Dashboard',
-      width : '15%',
-      route : `app/dashboard`
-    },
-    {
-      title: 'Add Employee',         
-      width : '15%',
-      route : `app/addEmp`
-    },
-   ]
-
-   active : string = '';
+  @Output() addEmpClicked = new EventEmitter<any>();
 
   constructor( public router : Router ) { }
 
   ngOnInit(): void {
 
-    this.active = 'Dashboard';
   }
 
-  activeMenu(title :any ,event : any){
+  addEmployee( event ){
 
-    this.active = title;
-    Logs.printLog( event )
-    this.router.navigate([event])
+    this.addEmpClicked.emit( event )
   }
 
+  logout(){
+
+    Logs.printLog( "LogOut" )
+    this.router.navigate(['login'])
+  }
 }

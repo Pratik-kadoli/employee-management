@@ -14,8 +14,9 @@ body {
 
 // popup settings
 .custom-dialog-container .mat-dialog-container {
-    border-radius: 5px; //.25em .25em .4em .4em
+    border-radius: 10px; //.25em .25em .4em .4em
     padding: 15px;
+    overflow-y: hidden;
 }
 
 .custom-dialog-container .mat-form-field-appearance-outline .mat-form-field-wrapper {

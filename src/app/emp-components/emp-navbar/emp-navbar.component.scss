@@ -1,14 +1,17 @@
 @import '../../../styles.scss';
 
 .navbar{
-    height: 100%;
+    height: 98%;
     width: 100%;
     border-radius: 0%;
     font-size: 16px;
+    background-color: rgb(255, 250, 242);
+
 
     .alignment{
 
-       padding-left: 2em;
+       padding-left: 0.500em;
+       padding-right: 1em;
 
         .Ptitle{
 
@@ -22,25 +25,13 @@
         }
     }
 
-    .cursor{
-        height: 100%;
+    .logoutCss{
+
         cursor: pointer;
-        margin: 0px 20px 0x 30px;
-      }
-  
-      .common-color{
-        color: #000000;
-        font-family: 'PT Sans', sans-serif;
-        font-size: 1.5em;
-        letter-spacing: 3px;
+        font-size: 1.6em;
         font-weight: bold;
-        color: #272836; 
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 0.8;
-        margin: 0% !important;
-        padding-inline-end: 3rem;
-      }
+    }
+
 }
 
 
