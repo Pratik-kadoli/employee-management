@@ -16,7 +16,7 @@ export class EmployeeLoginComponent implements OnInit {
     password : ['',Validators.required]
   });
 
-  hide = false;
+  hide = true;
   errorMessage = "";
   
   constructor( public _fb : FormBuilder, public router : Router) { }
